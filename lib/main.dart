@@ -52,19 +52,7 @@ class _MusicplayerState extends State<Musicplayer> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(
-            Icons.home,
-            size: 40.0,
-          ),
-          color: Colors.grey,
-          onPressed: () {
-            _audioPlayer.pause();
-            Navigator.pop(context);
-          },
-        ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 55.0),
+        title: Center(
           child: Text(
             'Music Player',
             style: TextStyle(fontWeight: FontWeight.w900, fontSize: 30.0),
